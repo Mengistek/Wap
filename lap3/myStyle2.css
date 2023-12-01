@@ -1,0 +1,168 @@
+body{
+    background-color: #e9e7e7;
+    margin: 0;
+}
+h1{
+    background-color: #115156;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  #miu-logo {
+    width: 25px; 
+    height: 25px;
+    margin-right: 10px; 
+  }
+  
+  .right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .right li {
+    margin-right: 25px; /* Add spacing between list items */
+  }
+
+
+#button{
+
+    width: 25%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 7px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#azureBut{
+    width: 100%;
+    background-color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+  #azureBut img {
+    width:100px ; 
+    height: 30px;
+  }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .dotted-lines {
+    position: relative;
+    text-align: center;
+  }
+  
+  .dotted-lines::before,
+  .dotted-lines::after {
+    content: "";
+    display: inline-block;
+    width: 150px; /* Adjust the width of the dotted lines */
+    border-top: 1px dotted #000; /* Dotted line style and color */
+    vertical-align: middle;
+    margin: 0 10px; /* Adjust the margin to control the spacing */
+  }
+  
+  .dotted-lines::before {
+    margin-left: 0; /* Adjust the left margin */
+  }
+  
+  .dotted-lines::after {
+    margin-right: 0; /* Adjust the right margin */
+  }
+
+  .vertical-line {
+    width: 0.5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(46, 44, 44); /* Color of the vertical line */
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    color: #666666;
+  }
+ /* Clear floats after the columns */
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer{
+    color: #666666;
+    background-color: #D9DADF;
+    padding: 2px;
+    text-align: right;
+  }
+  a{
+    color: #228CCD;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(139, 36, 36);
+    text-decoration:underline;
+  }
+  .forgot-password {
+    float: right;
+  }
+  .ticketDesc{
+    color: #1e1d1d;
+  }
+  .loginTitle{
+    color: #000;
+  }
+ 
+  
