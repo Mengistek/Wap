@@ -1,0 +1,27 @@
+.bodyx {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+}
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.button1:hover{
+
+    background-color: pink;
+    color:blue
+    
+}
+button{
+    width: 100px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  font-size: 14px;
+  align-items: center;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product Form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">MIU Golden Dome Market : : : SRM System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suppliers</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <span class="nav-link">Hello!</span>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" id="btn-sign-out" class="btn btn-success btn-curved btn-sign-out">Sign Out</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>New Product Form</h3>
+        <form action="./result.Html" method="get">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="productNumber" class="form-label">Product Number</label>
+                        <input type="text" class="form-control" id="productNumber" name="productNumber">
+                    </div>
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="productName" name="productName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="unitPrice" class="form-label">Unit Price</label>
+                        <input type="number" step="0.01" class="form-control" id="unitPrice" name="unitPrice" value="0.00">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="quantityInStock" class="form-label">Quantity in Stock</label>
+                        <input type="number" class="form-control" id="quantityInStock" name="quantityInStock" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="supplier" class="form-label">Supplier</label>
+                        <select class="form-select" id="supplier" name="supplier">
+                            <option value="" disabled selected>Select a Supplier</option>
+                            <option value="supplier1">Supplier 1</option>
+                            <option value="supplier2">Supplier 2</option>
+                            <option value="supplier3">Supplier 3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateSupplied" class="form-label">Date Supplied</label>
+                        <input type="date" class="form-control" id="dateSupplied" name="dateSupplied">
+                        <small class="text-danger text-muted">Enter a valid Date.</small>
+                    </div>
+                    <div class="text-end">
+                        <button  type="button" class="btn btn-secondary btn-curved btn-reset">Reset</button>
+                        <button type="button" class="btn btn-warning btn-color">Cancel</button>
+                        <button type="button" class="btn btn-info btn-curved btn-add-product">Add Product</button>
+                     </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+        <div>
+            <p>&copy;Copyright 2023. All rights reserved </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
