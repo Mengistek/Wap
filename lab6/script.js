@@ -61,7 +61,7 @@ function myMap(arr, fun) {
   return mappedArray;
 }
 
-const words1 = ["Mengs", "Silbana", "Adam"];
+const words = ["Mengs", "Silbana", "Adam"];
 
 const getWordLength = function (word) {
   return word.length;
@@ -69,5 +69,5 @@ const getWordLength = function (word) {
 
 const wordLengths = myMap(words, getWordLength);
 
-console.log("Original Words:", words1);
+console.log("Original Words:", words);
 console.log("Word Lengths:", wordLengths);
