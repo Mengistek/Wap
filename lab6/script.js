@@ -29,10 +29,9 @@ console.log(
 
 
 // ******** 1 B *********
-let filterTitile = libraryBooks
-  .filter((f) => f.title.length)
+let filterTitile = libraryBooks  
   .map((m) => m.title);
-console.log(filterTitile);
+console.log("title book",filterTitile);
 
 // ********* 1 C **********
 
