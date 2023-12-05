@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Assignment 06</h1>
+    <p>
+        <pre> 
+1, undefined, 8, 8, 9, 10, 1 
+
+2, 81, 25 
+
+3, 10 
+ 
+<h2>Number 1. </h2>
+
+Global EC: Creation 
+
+LE: {a: undefined, b: undefined, c: fn()} 
+
+Outer: null 
+ 
+Global EC: Execution 
+
+LE: {a:5, b:10, c: fun (), x:1} 
+
+Outer: null 
+ 
+
+c FEC: Creation 
+
+LE: {arguments {0:8, 1:9, 2:10, length :3}, a:8, b:9, c:10, x: undefined, f: undefined} 
+
+Outer: Global  
+ 
+
+c FEC: Execution 
+ 
+
+LE: {arguments: {0:8, 1:9, 2:10, length 3}, f: fun,  x:undefined} 
+
+Outer: Global 
+ 
+
+f FEC: Creation 
+
+LE: {arguments {0:8, 1:9, 2:10, length :3}, a:8, b:9, c:10, x: undefined} 
+
+Outer: c 
+ 
+ 
+
+f FEC: Execution 
+
+LE: {arguments: {0:8, 1:9, 2:10, length :3}, b:10, x:5} 
+
+Outer: c 
+ 
+<h2>Number 2. </h2>
+
+Global EC: Creation 
+
+LE: {x: undefined} 
+
+Outer: null 
+ 
+
+Global EC: Execution 
+
+LE: {x:9, x:5} 
+
+Outer: null 
+ 
+
+myFunction FEC: Creation 
+
+LE: {arguments {length :0} } 
+
+Outer: Global 
+ 
+
+myFunction FEC: Execution 
+
+LE: {} 
+
+Outer: Global 
+ 
+
+myFunction FEC: Creation 
+
+LE: {arguments {length :0} } 
+
+Outer: Global 
+ 
+
+myFunction FEC: Execution 
+
+LE: {} 
+
+Outer: Global 
+ 
+
+<h2>Number 3. </h2>
+
+Global EC: Creation 
+
+LE: {foo: undefined, bar: fun} 
+
+Outer: null 
+ 
+
+Global EC: Execution 
+
+LE: {foo: 1} 
+
+Outer: null 
+ 
+
+bar FEC: Creation 
+
+LE: {arguments {length :0}} 
+
+ifLE{foo: undefined} 
+
+Outer: Global 
+ 
+
+bar FEC: Execution 
+
+LE: {} 
+
+ifLE{foo: 10} 
+
+Outer: Global
+</pre>
+    </p>
+</body>
+</html>
